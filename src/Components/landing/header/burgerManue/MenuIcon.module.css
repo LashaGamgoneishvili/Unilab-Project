@@ -1,0 +1,58 @@
+:root {
+  --button-background: #ff6700;
+  --landing-color: #ffffff;
+  --button-hover: #c85100;
+  --box-text: rgba(37, 37, 37, 0.8);
+  --box-title: #424244;
+  --blog-text: #424244;
+  --list-backround: #e0e0e0;
+  --header-background: #eae9e9;
+  --white: #ffffff;
+}
+
+.menu_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.menu_icon div {
+  height: 2px;
+  width: 24px;
+  background-color: var(--white);
+  border-radius: 100px;
+  transition: all 0.5s;
+
+}
+
+.menu_opened {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 17px;
+  left: 140px;
+  padding: 3px;
+
+}
+
+.menu_opened div:first-child {
+  transform: rotatez(47deg) translate(6px, 5px);
+  background-color: var(--blog-text);
+  width: 24px;
+}
+
+.menu_opened div:nth-child(2) {
+  transform: rotatey(90deg);
+  opacity: 0;
+}
+
+.menu_opened div:last-child {
+  transform: rotatez(-47deg) translate(6px, -5px);
+  background-color: var(--blog-text);
+  width: 24px;
+}

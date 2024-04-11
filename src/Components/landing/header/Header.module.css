@@ -1,0 +1,111 @@
+:root {
+  --button-background: #ff6700;
+  --landing-color: #ffffff;
+  --button-hover: #c85100;
+  --box-text: rgba(37, 37, 37, 0.8);
+  --box-title: #424244;
+  --blog-text: #424244;
+  --list-backround: #e0e0e0;
+  --header-background: #eae9e9;
+  --white: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 8px 40px 30px;
+  width: 100%;
+}
+
+.header > a {
+  color: var(--white);
+}
+
+.sticky {
+  background-color: #eae9e9;
+  position: fixed;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.sticky .logo {
+  color: var(--blog-text);
+}
+
+@media (min-width: 1200px) {
+  .header {
+    padding: 20px 170px;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .explorera {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 44.56px;
+    color: var(--white);
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  .nav ul a {
+    text-decoration: none;
+    color: var(--white);
+    position: relative;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+  }
+
+  .nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: var(--white);
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: all 0.4s;
+  }
+
+  .nav ul li a:hover::after {
+    width: 100%;
+  }
+
+  .logo img {
+    width: 23.33px;
+    height: 30px;
+    top: 5px;
+    left: 8.33px;
+    border: 2px 0px 0px 0px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1720px) {
+  .nav ul {
+    gap: 40;
+  }
+  .nav ul li a {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32.81px;
+    letter-spacing: 0.05em;
+  }
+
+  .explorera {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 64.56px;
+  }
+}

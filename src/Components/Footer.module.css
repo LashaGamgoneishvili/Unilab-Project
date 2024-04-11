@@ -1,0 +1,141 @@
+:root {
+  --button-background: #ff6700;
+  --landing-color: #ffffff;
+  --button-hover: #c85100;
+  --box-text: rgba(37, 37, 37, 0.8);
+  --box-title: #424244;
+  --blog-text: #424244;
+  --list-backround: #e0e0e0;
+  --header-background: #eae9e9;
+  --footer-background: #eae9e9;
+}
+
+.footer {
+  background-color: var(--footer-background);
+}
+
+.footer_content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: 40px 74px 10px;
+}
+
+.footer_head_part {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer_head_part h1 {
+  font-family: "Kalnia";
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 37.66px;
+}
+.footer_head_part p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.44px;
+}
+.footer_head_part h2 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32.81px;
+}
+
+.footer_images {
+  display: flex;
+  gap: 20px;
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer_links ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  row-gap: 20px;
+}
+
+.footer_links h1 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32.81px;
+  color: var(--box-title);
+}
+.footer_links ul li:last-child {
+  display: none;
+}
+.footer_links ul li a {
+  text-decoration: none;
+  color: var(--blog-text);
+}
+
+.footer_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer_contact h1 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32.81px;
+}
+.footer_contact p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.44px;
+}
+
+.footer_mail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 225px;
+  gap: 20px;
+}
+
+.footer_mail label {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32.81px;
+}
+.footer_mail input {
+  border-radius: 10px;
+  border: 1px solid var(--blog-text);
+  padding: 10px;
+  background-color: var(--footer-background);
+}
+
+.footer_mail img {
+  position: absolute;
+  top: 60px;
+  left: 190px;
+  width: 24px;
+  height: 24px;
+  padding: 3.53px 3.53px 2.68px 2.68px;
+}
+.footer_mail img:active {
+  transform: rotatex(-45deg);
+}
+
+.copyright {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.13px;
+  text-align: center;
+
+  padding: 10px 10px 40px 10px;
+}
+
+@media (min-width: 1200px) {
+  .footer_content {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 400px;
+  }
+}

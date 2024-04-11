@@ -1,0 +1,6 @@
+.container {
+  background-color: #eae9e9;
+}
+.container .logo:first-child {
+  background-color: #333;
+}
