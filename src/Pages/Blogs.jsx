@@ -1,5 +1,3 @@
-import { queryAllByAltText } from "@testing-library/react";
-
 function Blogs() {
   return (
     <div>
